@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин косметики</title>
+    <link rel="stylesheet" href="./first.css">
+</head>
+<body>
+    <header>
+        <h1>Магазин косметики</h1>
+        <div class="headerElements">
+            <a href="#">Главная</a>
+            <a href="#">Каталог</a>
+            <a href="#">Контакты</a>
+        </div>
+    </header>
+
+    <div class="controls">
+        <div class="findDiv">
+            <label for="find">Поиск:</label>
+            <input type="text" id="find" placeholder="Введите ключевое слово...">
+        </div>
+
+        <div class="sortDiv">
+            <label for="sort">Сортировка:</label>
+            <select id="sort">
+                <option value="price-asc">Цена (по возрастанию)</option>
+                <option value="price-desc">Цена (по убыванию)</option>
+                <option value="name-asc">Название (по возрастанию)</option>
+                <option value="name-desc">Название (по убыванию)</option>
+            </select>
+        </div>
+    </div>
+    
+    <div class="cards">
+        <div class="card" data-name="тушь" data-price="450">
+            <img src="https://pcdn.goldapple.ru/p/p/19000115258/web/696d67416464338ddc5181d33f15a.jpg" alt="тушь">
+            <h2>Тушь</h2>
+            <p>Тушь для ресниц Manifest</p>
+            <button>В корзину</button>
+        </div>
+        <div class="card" data-name="помада" data-price="650">
+            <img src="https://i0.wp.com/wallpaperaccess.com/full/1190846.jpg?ssl=1" alt="помада">
+            <h2>Помада</h2>
+            <p>Помада для губ</p>
+            <button>В корзину</button>
+        </div>
+        <div class="card" data-name="крем" data-price="350">
+            <img src="https://www.letu.ru/common/img/pim/2025/07/AUX_8139ac99-fdac-4347-8850-74f47450e6df.jpg" alt="крем">
+            <h2>Крем</h2>
+            <p>Крем для лица Nivea Care</p>
+            <button>В корзину</button>
+        </div>
+        <div class="card" data-name="лак" data-price="250">
+            <img src="https://main-cdn.sbermegamarket.ru/hlr-system/125/724/373/410/253/41/100052297617b0.jpg" alt="лак">
+            <h2>Лак для ногтей</h2>
+            <p>Лак для ногтей Yolo</p>
+            <button>В корзину</button>
+        </div>
+    </div>
+
+    <div class="paginationButtons">
+        <button id="prevButton">←</button>
+        <span id="currentPage">1</span>
+        <button id="nextButton">→</button>
+    </div>
+</body>
+</html>
