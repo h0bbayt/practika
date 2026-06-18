@@ -17,15 +17,14 @@
     </header>
     
     <main class="product-container">
-        
         <section class="product-gallery">
             <div class="main-image">
-                <img src="https://i0.wp.com/wallpaperaccess.com/full/1190846.jpg?ssl=1" alt="Помада для губ - Главное фото">
+                <img id="mainImg" src="https://i0.wp.com/wallpaperaccess.com/full/1190846.jpg?ssl=1" alt="Помада для губ - Главное фото">
             </div>
             <div class="thumbnails">
                 <img src="https://i0.wp.com/wallpaperaccess.com/full/1190846.jpg?ssl=1" alt="Ракурс 1" class="thumb active">
-                <img src="https://i0.wp.com/wallpaperaccess.com/full/1190846.jpg?ssl=1" alt="Ракурс 2" class="thumb">
-                <img src="https://i0.wp.com/wallpaperaccess.com/full/1190846.jpg?ssl=1" alt="Ракурс 3" class="thumb">
+                <img src="https://avatars.mds.yandex.net/i?id=be4af07c93496da3e227a78951993506_l-6965551-images-thumbs&n=13" alt="Ракурс 2" class="thumb">
+                <img src="https://avatars.mds.yandex.net/i?id=f5e70eb06bd8bbc1c1e4dc201c71f43c_l-8211098-images-thumbs&n=13" alt="Ракурс 3" class="thumb">
             </div>
         </section>
 
@@ -62,7 +61,18 @@
 
             <button class="btn-buy">Добавить в корзину</button>
         </section>
-
     </main>
+
+    <section class="reviews-section">
+        <h3>Отзывы</h3>
+        <form id="reviewForm">
+            <input type="text" id="reviewerName" placeholder="Ваше имя" required>
+            <textarea id="reviewText" rows="4" placeholder="Ваш отзыв" required></textarea>
+            <button type="submit">Оставить отзыв</button>
+        </form>
+        <div id="reviewsList"></div>
+    </section>
+
+    <script src="./second.js"></script>
 </body>
 </html>
