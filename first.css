@@ -122,3 +122,6 @@ header h1 {
     cursor: pointer;
     transition: background-color 0.2s;
 }
+.hidden {
+    display: none !important;
+}
